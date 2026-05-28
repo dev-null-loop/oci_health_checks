@@ -64,7 +64,6 @@ variable "protocol" {
 variable "targets" {
   description = "(Required) (Updatable) A list of targets (hostnames or IP addresses) of the probe."
   type        = list(string)
-  default     = ["www.oracle.com"]
 }
 
 variable "timeout_in_seconds" {
@@ -76,5 +75,5 @@ variable "timeout_in_seconds" {
 variable "vantage_point_names" {
   description = "(Optional) (Updatable) A list of names of vantage points from which to execute the probe."
   type        = list(string)
-  default     = ["goo-chs"]
+  default     = []
 }
